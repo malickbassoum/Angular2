@@ -1,0 +1,11 @@
+<div>Film vu récement</div>
+<input #movieTitle type="text" placeholder="Ajouter un titre de film">
+<button (click)="addMovie(movieTitle.value)">
+Ajouter
+</button>
+<ul>
+  <li *ngFor="#movie of recentlyWatchMovies">
+    {{movie}}
+  </li>
+
+</ul>
