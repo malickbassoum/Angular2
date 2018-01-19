@@ -3,6 +3,8 @@
 <button (click)="addMovie(movieTitle.value)">
 Ajouter
 </button>
+<div *ngIf="nbOfMovie===1">1 film vu recement</div>
+<div *ngIf="nbOfMovie>1">{{nbOfMovie}} film vus recement</div>
 <ul>
   <li *ngFor="#movie of recentlyWatchMovies">
     {{movie}}
