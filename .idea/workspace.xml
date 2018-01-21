@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9b682806-be66-4945-98db-33de92576dbb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/movies/movie.service.ts" afterPath="$PROJECT_DIR$/src/app/components/movies/movie.service.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/movies/movies.component.html" afterPath="$PROJECT_DIR$/src/app/components/movies/movies.component.html" />
       <change beforePath="$PROJECT_DIR$/src/app/components/movies/movies.component.ts" afterPath="$PROJECT_DIR$/src/app/components/movies/movies.component.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="movies.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/components/movies/movies.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+            <state relative-caret-position="1144">
+              <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -260,12 +258,12 @@
       <workItem from="1516294242068" duration="3108000" />
       <workItem from="1516297980913" duration="47000" />
       <workItem from="1516298175307" duration="4042000" />
-      <workItem from="1516539572397" duration="6297000" />
+      <workItem from="1516539572397" duration="7835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24407000" />
+    <option name="totallyTimeSpent" value="25945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="69" width="1346" height="688" extended-state="0" />
@@ -613,8 +611,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/movies/movies.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+        <state relative-caret-position="1144">
+          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>

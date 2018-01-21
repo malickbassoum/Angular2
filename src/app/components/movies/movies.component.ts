@@ -1,7 +1,7 @@
 import {Component, OnInit} from 'angular2/core';
 import {MovieService} from "./movie.service";
 import {Movie} from './movie';
-import {FormBuilder} from 'angular2/common';
+import {Control, FormBuilder} from 'angular2/common';
 import {ControlGroup} from 'angular2/common';
 import {Validators} from 'angular2/common';
 
@@ -39,11 +39,23 @@ export class Movies implements OnInit{
     this.movie.year=formValue.year;
 
     this.movieService.addMovie(this.movie);
+    this.clearForm();
     this.nbOfMovie=this.recentlyWatchMovies.length;
 
     console.log(this.recentlyWatchMovies);
     this.movie= new Movie();
   }
+    clearForm(){
+    let controlsObj=this.myForm.controls;
+    for (let prop in controlsObj){
+      if(controlsObj.hasOwnProperty(prop)){
+        console.log(controlsObj[prop]);
+        (controlsObj[prop] as Control).updateValue('');
+      }
+    }
+    }
+
+
   ngOnInit(){
     this.recentlyWatchMovies=this.movieService.getAllMovies();
     this.nbOfMovie=this.recentlyWatchMovies.length;
