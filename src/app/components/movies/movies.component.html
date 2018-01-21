@@ -1,13 +1,17 @@
-<div>Film vu récement</div>
-<input #movieTitle type="text" placeholder="Ajouter un titre de film">
-<button (click)="addMovie(movieTitle.value)">
-Ajouter
-</button>
+<h3>Film vu récement</h3>
+<form [(ngFormModel)]="myForm" (ngSubmit)="addMovie()">
+  <input [ngFormControl]="myForm.controls['title']" type="text" id="title" placeholder="titre" required><br>
+  <input [ngFormControl]="myForm.controls['actors']" type="text"  id="actors" placeholder="acteurs(séparer par des virgules)"><br>
+  <input [ngFormControl]="myForm.controls['directors']" type="text"  id="directors" placeholder="réalisateur(séparer par des virgules)"><br>
+  <input [ngFormControl]="myForm.controls['year']" type="text"  id="year" placeholder="année" required><br>
+  <button type="submit" [disabled]="!myForm.valid">ajouter</button>
+</form>
+
 <div *ngIf="nbOfMovie===1">1 film vu recement</div>
 <div *ngIf="nbOfMovie>1">{{nbOfMovie}} film vus recement</div>
 <ul>
   <li *ngFor="#movie of recentlyWatchMovies">
-    {{movie}}
+    {{movie.title}}
   </li>
 
 </ul>
